@@ -12,12 +12,180 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
     <link rel="manifest" href="favicon//site.webmanifest">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
 
     <!-- NAVBAR start -->
-    <section></section>
+    <section>
+        <!-- header section starts -->
+    <div class="header-search-section">
+        <input type="search" name="text" id="search"
+        placeholder="search...">
+        <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        <ion-icon class="heart-red" name="heart-outline"></ion-icon>
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+      <section class="header" >
+        <div class="top-nav container">
+          <div class="top-nav-left">
+            <div class="language">
+              <select name="language" id="language">
+                <option value="uz">UZ</option>
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
+            <div class="course">
+              <select name="course" id="course">
+                <option value="uzs">UZS</option>
+                <option value="rub">RUB</option>
+                <option value="usd">USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="top-nav-right">
+            <a href="#" class="my-profile">
+              <i class="fa-regular fa-user"></i> My Profile</a
+            >
+            <a href="#" class="my-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Items</a
+            >
+            <a href="#" class="my-cart">$0.00<i class="fas fa-search"></i> </a>
+          </div>
+        </div>
+  
+        <div class="bottom-nav container">
+          <div class="logo">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 97 98"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                y="0.778564"
+                width="96.5844"
+                height="96.5844"
+                rx="16"
+                fill="#40BFFF"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M68.1838 45.2765C70.2792 47.372 70.2792 50.7694 68.1838 52.8649L52.0864 68.9623C49.9909 71.0578 46.5935 71.0578 44.498 68.9623L28.4006 52.8649C26.3051 50.7694 26.3051 47.372 28.4006 45.2765L44.498 29.1791C46.5935 27.0837 49.9909 27.0837 52.0864 29.1791L68.1838 45.2765ZM48.2922 40.5617L39.7832 49.0707L48.2922 57.5797L56.8012 49.0707L48.2922 40.5617Z"
+                fill="white"
+              />
+            </svg>
+            E-Comm
+          </div>
+          <nav class="nav">
+            <ul class="nav-links">
+               <li class="list active">
+                 <a href="#home">
+                   <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                   <span class="home text">home</span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="#bags">
+                   <span class="icon">
+                   <ion-icon name="cart-outline"></ion-icon>
+                 </span>
+                   <span class="bags text">bags</span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="#senakers">
+                   <span class="icon">
+                     <ion-icon name="pricetag-outline"></ion-icon>
+                   </span>
+                   <span class="senakers text">sneakers</span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="#belt">
+                   <span class="icon">
+                     <!-- <ion-icon name="pricetag-outline"></ion-icon> -->
+                   </span>
+                   <span class="belt text"></span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="#portfolio">
+                   <span class="icon"
+                     >
+                     <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                   <span class="portfolio text">contact</span>
+                 </a>
+               </li>
+       
+       
+               <div class="indicator"></div>
+             </ul>
+           </nav>
+        </div>
+      </section>
+  
+      <!-- responsive navbar -->
+      <nav class="nav hidden-nav">
+       <ul class="nav-links">
+          <li class="list active">
+            <a href="#home">
+              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+              <span class="home text">home</span>
+            </a>
+          </li>
+          <li class="list ">
+            <a href="#explore">
+              <span class="icon">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+  
+              </span>
+              <span class="home text">explore</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#bags">
+              <span class="icon">
+              <ion-icon name="cart-outline"></ion-icon>
+            </span>
+              <span class="bags text">carts</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#senakers">
+              <span class="icon">
+                <ion-icon name="pricetag-outline"></ion-icon>
+              </span>
+              <span class="senakers text">offer</span>
+            </a>
+          </li>
+        
+          <li class="list">
+            <a href="#portfolio">
+              <span class="icon"
+                >
+                <ion-icon name="person-outline"></ion-icon>
+               </span>
+              <span class="portfolio text">accaunt</span>
+            </a>
+          </li>
+  
+  
+          <div class="indicator"></div>
+        </ul>
+      </nav> 
+    </section>
     <!-- NAVBAR finish -->
 
     <section>
@@ -59,6 +227,16 @@
      <!-- FOOTER start -->
      <section></section>
      <!-- FOOTER finish -->
+
+     <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </body>
 
 </html>
