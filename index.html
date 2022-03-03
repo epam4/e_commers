@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- local css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/container.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header section starts -->
+    <div class="header-search-section">
+      <input type="search" name="text" id="search"
+      placeholder="search...">
+      <ion-icon class="search-icon" name="search-outline"></ion-icon>
+      <ion-icon class="heart-red" name="heart-outline"></ion-icon>
+      <ion-icon name="notifications-outline"></ion-icon>
+    </div>
+    <section class="header" >
+      <div class="top-nav container">
+        <div class="top-nav-left">
+          <div class="language">
+            <select name="language" id="language">
+              <option value="uz">UZ</option>
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <div class="course">
+            <select name="course" id="course">
+              <option value="uzs">UZS</option>
+              <option value="rub">RUB</option>
+              <option value="usd">USD</option>
+            </select>
+          </div>
+        </div>
+        <div class="top-nav-right">
+          <a href="#" class="my-profile">
+            <i class="fa-regular fa-user"></i> My Profile</a
+          >
+          <a href="#" class="my-cart">
+            <i class="fa-solid fa-cart-shopping"></i> Items</a
+          >
+          <a href="#" class="my-cart">$0.00<i class="fas fa-search"></i> </a>
+        </div>
+      </div>
+
+      <div class="bottom-nav container">
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 97 98"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              y="0.778564"
+              width="96.5844"
+              height="96.5844"
+              rx="16"
+              fill="#40BFFF"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M68.1838 45.2765C70.2792 47.372 70.2792 50.7694 68.1838 52.8649L52.0864 68.9623C49.9909 71.0578 46.5935 71.0578 44.498 68.9623L28.4006 52.8649C26.3051 50.7694 26.3051 47.372 28.4006 45.2765L44.498 29.1791C46.5935 27.0837 49.9909 27.0837 52.0864 29.1791L68.1838 45.2765ZM48.2922 40.5617L39.7832 49.0707L48.2922 57.5797L56.8012 49.0707L48.2922 40.5617Z"
+              fill="white"
+            />
+          </svg>
+          E-Comm
+        </div>
+        <nav class="nav">
+          <ul class="nav-links">
+             <li class="list active">
+               <a href="#home">
+                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                 <span class="home text">home</span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#bags">
+                 <span class="icon">
+                 <ion-icon name="cart-outline"></ion-icon>
+               </span>
+                 <span class="bags text">bags</span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#senakers">
+                 <span class="icon">
+                   <ion-icon name="pricetag-outline"></ion-icon>
+                 </span>
+                 <span class="senakers text">sneakers</span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#belt">
+                 <span class="icon">
+                   <!-- <ion-icon name="pricetag-outline"></ion-icon> -->
+                 </span>
+                 <span class="belt text"></span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#portfolio">
+                 <span class="icon"
+                   >
+                   <ion-icon name="person-outline"></ion-icon>
+                  </span>
+                 <span class="portfolio text">contact</span>
+               </a>
+             </li>
+     
+     
+             <div class="indicator"></div>
+           </ul>
+         </nav>
+      </div>
+    </section>
+
+    <!-- responsive navbar -->
+    <nav class="nav hidden-nav">
+     <ul class="nav-links">
+        <li class="list active">
+          <a href="#home">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="home text">home</span>
+          </a>
+        </li>
+        <li class="list ">
+          <a href="#explore">
+            <span class="icon">
+              <ion-icon class="search-icon" name="search-outline"></ion-icon>
+
+            </span>
+            <span class="home text">explore</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#bags">
+            <span class="icon">
+            <ion-icon name="cart-outline"></ion-icon>
+          </span>
+            <span class="bags text">carts</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#senakers">
+            <span class="icon">
+              <ion-icon name="pricetag-outline"></ion-icon>
+            </span>
+            <span class="senakers text">offer</span>
+          </a>
+        </li>
+      
+        <li class="list">
+          <a href="#portfolio">
+            <span class="icon"
+              >
+              <ion-icon name="person-outline"></ion-icon>
+             </span>
+            <span class="portfolio text">accaunt</span>
+          </a>
+        </li>
+
+
+        <div class="indicator"></div>
+      </ul>
+    </nav> 
+
+    <!-- hero section -->
+    <section class="hero"  >
+      <div class="header-img-section" >
+        <img src="./img/header-bg.jpg" alt="">
+        <div class="responsive-text">
+          Super Flash Sale 50% Off
+        </div>
+        <div  
+          class="header-img-section-text container"
+          id="header-img-section-text"
+        >
+          Super Flash Sale 50% Off
+        </div>
+        <div class="times" >
+          <div class="day still"></div>
+            <div class="double-click"> : </div>
+          <div class="hours still"></div>
+            <div class="double-click"> : </div>
+          <div class="minut still"></div>
+           </div>
+      </div>
+      <div class="hero-card-section container" >
+        <div class="cards">
+          <!-- card one -->
+          <div class="card">
+            <div class="card-top">FS - QUILTED MAXI CROSS BAG</div>
+            <div class="card-img">
+              <img src="./img/black_bag.png" alt="" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-text">
+                <span id="red-number"> $534,33 </span>
+                24% Off
+              </div>
+              <div class="card-bottom-salary">$299,43</div>
+            </div>
+          </div>
+          <!-- card two -->
+          <div class="card">
+            <div class="card-top">
+              FS - Nike Air Max 270 React...
+              <div class="card-bottom-salary">$299,43</div>
+            </div>
+            <div class="card-img">
+              <img src="./img/yellow.png" alt="" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-text">
+                24% Off
+                <span id="red-number"> $534,33 </span>
+              </div>
+            </div>
+          </div>
+          <!-- card there -->
+          <div class="card">
+            <div class="card-top">FS - Nike Air Max 270 React...</div>
+            <div class="card-bottom-text">
+              <content> $534,33 </content>
+              <span id="red-number">24% Off</span>
+            </div>
+            <div class="card-img">
+              <img src="./img/red.png" alt="" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-salary">$299,43</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- middle section -->
+    <section class="best container" >
+      <div class="best-title title">best siller</div>
+      <div class="responsive-category">
+        <a href="#"> category</a>
+        <a href="#"> more category</a>
+      </div>
+      <div class="best-types">
+        <div class="list-types">
+          <ion-icon name="shirt-outline"></ion-icon>
+          <a href="#">all</a>
+        </div>
+        <div class="list-types">
+          <ion-icon name="thumbs-up-outline"></ion-icon>  
+          <a href="#">bags</a>
+
+        </div>
+        <div class="list-types">
+          <ion-icon name="ribbon-outline"></ion-icon>
+          <a href="#">sneakers</a>
+
+        </div>
+        <div class="list-types">
+          <ion-icon name="gift-outline"></ion-icon>
+          <a href="#">belt</a>
+        </div>
+        <div class="list-types">
+          <ion-icon name="glasses-outline"></ion-icon>
+          <a href="#">glasses</a>
+        </div>
+
+       
+      </div>
+      <div class="best-gallery">
+        <div class="cols">
+          <span class="hot">hot</span>
+          <div class="cols-img">
+            <img src="./img/colorfull-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max 270 React</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div class="cols-img">
+            <img src="./img/red_bag-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div class="cols-img">
+            <img src="./img/colorfull-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div class="cols-img">
+            <img src="./img/sneak_blue-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-category">
+        <a href="#"> flash sale</a>
+        <a href="#"> see more</a>
+      </div>
+      <div class="responsive-img-gallery">
+        <img src="./img/white-keta.jpg" alt="">
+        <div class="responsive-img-gallery-theme">
+          Recomended
+Product
+        </div>
+        <div class="responsive-img-gallery-text">
+          We recommend the best for you
+        </div>
+      </div>
+
+
+
+      <div class="best-gallery">
+        <div class="cols">
+          <span class="hot">hot</span>
+          <div class="cols-img">
+            <img src="./img/sneak_behind-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max 270 React</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div class="cols-img">
+            <img src="./img/sneak_under-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div class="cols-img">
+            <img src="./img/sneak_right-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div class="cols-img">
+            <img src="./img/sneak_blue-removebg-preview.png" alt="" />
+            <span class="cols-hover">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+          <div class="cols-footer">
+            <div class="cols-footer-title">Nike Air Max</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="cols-salary">
+              <span class="salary"> $299.93 </span>
+              <span class="sale"> $534,33 </span>
+              <span class="cheaper"> 24% </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-category">
+        <a href="#"> mega sale</a>
+        <a href="#"> see more</a>
+      </div>
+      <a href="#" class="best-footer-title title"> load more </a>
+    </section>
+
+    <!-- blue background section -->
+
+    <section class="adidas">
+      <div class="adidas-row container">
+        <div class="adidas-col">
+          <div class="adidas-col-title">Adidas Men Running Sneakers</div>
+
+          <div class="adidas-col-info">
+            Performance and design. Taken right to the edge.
+          </div>
+          <a href="#" class="adidas-col-shop"> shop now</a>
+        </div>
+        <div class="adidas-col">
+          <img src="./img/vent-removebg-preview.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- quality section -->
+    <section class="quality container">
+      <div class="quality-row">
+        <div class="quality-col">
+          <img src="./img/delevru-removebg-preview.png" alt="" />
+          <div class="quality-col-title">FREE SHIPPING</div>
+          <div class="quality-col-info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+        <div class="quality-col">
+          <img src="./img/price-removebg-preview.png" alt="" />
+          <div class="quality-col-title">100% REFUND</div>
+          <div class="quality-col-info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+        <div class="quality-col">
+          <img src="./img/operator-removebg-preview.png" alt="" />
+          <div class="quality-col-title">SUPPORT 24/7</div>
+          <div class="quality-col-info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- information section  -->
+
+    <section class="info-section container" >
+      <div class="info-section-title title">LATEST NEWS</div>
+      <div class="info-section-row">
+        <div class="info-section-col">
+          <div class="info-img">
+            <img src="./img/nike-removebg-preview.png" alt="" />
+          </div>
+          <div class="info-section-texts">
+            <div class="info-section-date">01 Jan, 2015</div>
+            <div class="info-section-title">Fashion Industry</div>
+            <div class="info-section-info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+          </div>
+        </div>
+
+        <div class="info-section-col">
+          <div class="info-img">
+            <img src="./img/kronos-removebg-preview.png" alt="" />
+          </div>
+          <div class="info-section-texts">
+            <div class="info-section-date">01 Jan, 2015</div>
+            <div class="info-section-title">Fashion Industry</div>
+            <div class="info-section-info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+          </div>
+        </div>
+        <div class="info-section-col">
+          <div class="info-img">
+            <img src="./img/kronos-removebg-preview.png" alt="" />
+          </div>
+          <div class="info-section-texts">
+            <div class="info-section-date">01 Jan, 2015</div>
+            <div class="info-section-title">Fashion Industry</div>
+            <div class="info-section-info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS  -->
+    <section class="future-product container"  >
+      <div class="future-product-title title">FEATURED PRODUCTS</div>
+      <div class="future-product-row">
+        <div class="future-product-col">
+          <div class="future-img">
+            <img src="./img/blue-removebg-preview.png" alt="" />
+          </div>
+          <div class="future-texts">
+            <div class="future-info">Blue Swade Nike Sneakers</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="future-price"> 299$ </span>
+            <span class="future-sale"> 599$ </span>
+          </div>
+        </div>
+        <div class="future-product-col">
+          <div class="future-img">
+            <img src="./img/blue-removebg-preview.png" alt="" />
+          </div>
+          <div class="future-texts">
+            <div class="future-info">Blue Swade Nike Sneakers</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="future-price"> 299$ </span>
+            <span class="future-sale"> 599$ </span>
+          </div>
+        </div>
+        <div class="future-product-col">
+          <div class="future-img">
+            <img src="./img/blue-removebg-preview.png" alt="" />
+          </div>
+          <div class="future-texts">
+            <div class="future-info">Blue Swade Nike Sneakers</div>
+            <div class="cols-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="future-price"> 299$ </span>
+            <span class="future-sale"> 599$ </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- search section -->
+
+    <section class="search-section container"  >
+         <form action="#">
+        <input type="text" name="text" id="text" placeholder="search query.." />
+        <button class="search-button">search</button>
+      </form>
+    </section>
+ 
+    <script src="./js/app.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  </body>
+</html>
