@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button id="open" onclick="closeModal()">close</button>
+    <button onclick="modal1()">open</button>
+    <!-- modal 1 start -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="nav">
+                    <img src="../../icon/arrow_left.png" alt="arrow" onclick="arrowBody()">
+                    <img src="../../icon/del_blue.png" class="del" alt="delete" onclick="closeModal()">
+                </div>
+                <p>Make Payment</p>
+                <div class="button">
+                    <button>1</button><span></span>
+                    <button class="grey">2</button><span></span>
+                    <button class="grey">3</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="modalSelecForm">
+                    <input type="text" id="text" placeholder="First Name" id="text">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" name="" id="" placeholder="Mobile Phone">
+                    <div class="list">
+                        <p class="title">Select Method Of Payment</p>
+                        <div class="list-item">
+                            <img src="../../icon/Credit.png" alt="">
+                            <p>Credit Card Or Debit</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="list-item">
+                            <img src="../../icon/Pay.png" alt="">
+                            <p>Paypal</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="list-item">
+                            <img src="../../icon/Bank.png" alt="">
+                            <p>Bank Transfer</p>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <textarea  placeholder="Address for Delivery" ></textarea>
+                </form>
+            </div>
+            <button class="next" id="Payment" onclick="modal2()">Go to Payment</button>
+        </div>
+    </div>
+    <!-- modal 1 finished -->
+    <!-- modal 2 card number start -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="nav">
+                    <img src="../../icon/arrow_left.png" alt="arrow" onclick="arrowModal1()">
+                    <img src="../../icon/del_blue.png" class="del" alt="delete" onclick="closeModal()">
+                </div>
+                <p>Make Payment</p>
+                <div class="button">
+                    <button>1</button><span></span>
+                    <button>2</button><span></span>
+                    <button class="grey">3</button>
+                </div>
+            </div>
+            <div class="modal-body card">
+                <div class="img">
+                    <img src="../../icon/CreditCard.png" alt="">
+                </div>
+                <form action="#" class="cardForm">
+                    <input type="number" name="card" id="" placeholder="Card Number">
+                    <div class="flex">
+                        <input type="text" placeholder="Expiry">
+                        <input type="text" name="" id="" placeholder="CVV">
+                    </div>
+                    <input type="text" placeholder="Holder Number">
+                    <div class="save">
+                        <input type="checkbox" name="save" id="">
+                        <label for="save">Save this credit card</label>
+                    </div>
+                </form>
+            </div>
+            <button class="next" onclick="modal3()">Confirm</button>
+        </div>
+    </div>
+    <!-- modal 2 finished -->
+    <!-- modal 3 success start -->
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="nav">
+                    <img src="../../icon/arrow_left.png" alt="arrow" onclick="arrowModal2()">
+                    <img src="../../icon/del_blue.png" class="del" alt="delete" onclick="closeModal()">
+                </div>
+                <p>Make Payment</p>
+                <div class="button">    
+                    <button>1</button><span></span>
+                    <button>2</button><span></span>
+                    <button>3</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="success">
+                    <img src="../../icon/tick_white.png" alt="">
+                    <p>Success</p>
+                </div>
+                <button class="next" id="next" onclick="closeModal()">Complete</button>
+            </div>
+        </div>
+    </div>
+    <!-- modal 3 finished -->
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

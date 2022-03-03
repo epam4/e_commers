@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(128, 128, 128, 0.37);
+}
+.modal-content {
+    width: 60%;
+    margin: 100px auto;
+    padding: 30px 50px;
+    background-color: rgb(252, 253, 253);
+    text-align: center;
+    animation:  animation1 1s;
+}
+.modal-header .nav{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+.modal-header  p {
+    font-weight: 500;
+    font-size: 32px;
+    color: #40BFFF;
+}
+button {
+    background: #40BFFF;
+    box-shadow: 0px 10px 40px rgba(248, 161, 112, 0.2);
+    color: white;
+    border: none;
+}
+.button{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.button button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+button:hover{
+    transition: 1s all;
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+}
+.button span {
+    margin: auto;
+    width: 20px;
+    height: 3px;
+    background: #DFDEDE;
+}
+.grey {
+    background: #DFDEDE;
+}
+/* navbar done */
+
+.modal-body {
+    margin-top: 20px;
+    text-align: center;
+}
+.modalSelecForm {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+form input,textarea{
+    width: 100%;
+    background: #DFDEDE;
+    opacity: 0.3;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+input[type='checkbox']{
+    width: auto;
+}
+.list .title {
+    color: #40BFFF; 
+    font-weight: 500;
+    text-align: left;
+}
+.list .list-item {
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+.list-item p {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;    
+}
+.list-item input {
+    margin-left: auto;
+}
+.modal .next {
+    border-radius: 10px;
+    padding: 15px 60px;
+    width: fit-content;
+    margin: 20px auto;
+    margin-left: auto;
+}
+/* modal2 start */
+.card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+}
+.card img{
+    width: 100%;
+}
+.cardForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardForm .flex {
+    display: flex;
+    gap: 10px;
+}
+/* modal2 finished */
+
+/* modal3 start */
+.success img{
+    padding: 45px;
+    background: rgba(64, 191, 255, 1);
+    box-shadow: 0px 10px 30px rgba(64, 191, 255, 0.24); 
+    border-radius: 56px;
+}
+/* modal3 finished */
+
+/* animation for all */
+@keyframes animation1{
+    from{margin-top:0px}
+    to{margin-top:100px}
+}
+
+/* media */
+@media (max-width:768px){
+    .modal-content {
+        padding: 30px;
+        width: 80%;
+    }
+    .modal-header  p{
+        padding: 10px 0;
+    }
+}
+@media (max-width:425px){
+    .modalSelecForm ,  .card{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:425px){
+    .modal-content {
+        padding: 30px;
+        width: 90%;
+    }
+}
