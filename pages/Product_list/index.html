@@ -1,12 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Product List</title>
 </head>
+
 <body>
-    <!-- hhhhhhhhhhhhhh -->
+    <!-- Main -->
+
+    <main class="main">
+        <!-- NAVBAR start -->
+        <section>
+            <!-- header section starts -->
+            <div class="header-search-section">
+                <input type="search" name="text" id="search" placeholder="search...">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+                <ion-icon class="heart-red" name="heart-outline"></ion-icon>
+                <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+            <section class="header">
+                <div class="top-nav container">
+                    <div class="top-nav-left">
+                        <div class="language">
+                            <select name="language" id="language">
+                                <option value="uz">UZ</option>
+                                <option value="ru">RU</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
+                        <div class="course">
+                            <select name="course" id="course">
+                                <option value="uzs">UZS</option>
+                                <option value="rub">RUB</option>
+                                <option value="usd">USD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="top-nav-right">
+                        <a href="#" class="my-profile">
+                            <i class="fa-regular fa-user"></i> My Profile</a>
+                        <a href="#" class="my-cart">
+                            <i class="fa-solid fa-cart-shopping"></i> Items</a>
+                        <a href="#" class="my-cart">$0.00<i class="fas fa-search"></i> </a>
+                    </div>
+                </div>
+
+                <div class="bottom-nav container">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 97 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.778564" width="96.5844" height="96.5844" rx="16" fill="#40BFFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M68.1838 45.2765C70.2792 47.372 70.2792 50.7694 68.1838 52.8649L52.0864 68.9623C49.9909 71.0578 46.5935 71.0578 44.498 68.9623L28.4006 52.8649C26.3051 50.7694 26.3051 47.372 28.4006 45.2765L44.498 29.1791C46.5935 27.0837 49.9909 27.0837 52.0864 29.1791L68.1838 45.2765ZM48.2922 40.5617L39.7832 49.0707L48.2922 57.5797L56.8012 49.0707L48.2922 40.5617Z"
+                                fill="white" />
+                        </svg>
+                        E-Comm
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav-links">
+                            <li class="list active">
+                                <a href="./../../index.html">
+                                    <span class="icon">
+                                        <ion-icon name="home-outline"></ion-icon>
+                                    </span>
+                                    <span class="home text">home</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#bags">
+                                    <span class="icon">
+                                        <ion-icon name="cart-outline"></ion-icon>
+                                    </span>
+                                    <span class="bags text">bags</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#senakers">
+                                    <span class="icon">
+                                        <ion-icon name="pricetag-outline"></ion-icon>
+                                    </span>
+                                    <span class="senakers text">sneakers</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#belt">
+                                    <span class="icon">
+                                        <!-- <ion-icon name="pricetag-outline"></ion-icon> -->
+                                    </span>
+                                    <span class="belt text"></span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="./../../pages/Contact/index.html">
+                                    <span class="icon">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                    </span>
+                                    <span class="portfolio text">contact</span>
+                                </a>
+                            </li>
+
+
+                            <div class="indicator"></div>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- responsive navbar -->
+            <nav class="nav hidden-nav">
+                <ul class="nav-links">
+                    <li class="list active">
+                        <a href="./../../index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="home text">home</span>
+                        </a>
+                    </li>
+                    <li class="list ">
+                        <a href="#explore">
+                            <span class="icon">
+                                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+
+                            </span>
+                            <span class="home text">explore</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#bags">
+                            <span class="icon">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </span>
+                            <span class="bags text">carts</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#senakers">
+                            <span class="icon">
+                                <ion-icon name="pricetag-outline"></ion-icon>
+                            </span>
+                            <span class="senakers text">offer</span>
+                        </a>
+                    </li>
+
+                    <li class="list">
+                        <a href="./../../pages/Contact/index.html">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span class="portfolio text">accaunt</span>
+                        </a>
+                    </li>
+
+
+                    <div class="indicator"></div>
+                </ul>
+            </nav>
+        </section>
+        <!-- NAVBAR finish -->
+        <!-- Products -->
+        <div class="product__page--2">
+            <section class="products">
+                <section class="link-content">
+                    <div class="links">
+                        <a href="#">Home</a>
+                        <span> / </span>
+                        <p>Hot Deal</p>
+                    </div>
+                </section>
+                <div class="container">
+                    <!-- Products Filter -->
+
+                    <div class="products-filter">
+                        <ul class="products-filter__list">
+                            <li class="products-filter__item">
+                                <h3 class="products-filter__heading">hot deals</h3>
+
+                                <ul class="brand__list">
+                                    <li class="brand__item">
+                                        <p class="brand__name">nike</p>
+
+                                        <span class="brand__number">2</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name brand__name--active">airmax</p>
+
+                                        <span class="brand__number brand__number--active">48</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">puma</p>
+
+                                        <span class="brand__number">14</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">adidas</p>
+
+                                        <span class="brand__number">15</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">vans</p>
+
+                                        <span class="brand__number">23</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">all stars</p>
+
+                                        <span class="brand__number">1</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">aleks</p>
+
+                                        <span class="brand__number">95</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="products-filter__item">
+                                <h3 class="products-filter__heading">prices</h3>
+
+                                <span class="products-filter__Info">
+                                    <span class="products-filter__Info-text">Ranger</span>
+
+                                    <span class="products-filter__Info-price">$0 - $25.99</span>
+                                </span>
+
+                                <input class="slider__input" type="range" min="0" max="26" value="25" step="0.1" />
+                            </li>
+
+                            <li class="products-filter__item">
+                                <h3 class="products-filter__heading">color</h3>
+
+                                <ul class="color__list">
+                                    <li class="color__item"></li>
+
+                                    <li class="color__item"></li>
+
+                                    <li class="color__item"></li>
+
+                                    <li class="color__item"></li>
+
+                                    <li class="color__item"></li>
+
+                                    <li class="color__item"></li>
+                                </ul>
+                            </li>
+
+                            <li class="products-filter__item">
+                                <ul class="brand__list">
+                                    <li class="brand__item">
+                                        <p class="brand__name">nike</p>
+
+                                        <span class="brand__number">99</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">airmax</p>
+
+                                        <span class="brand__number">99</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">adidas</p>
+
+                                        <span class="brand__number">99</span>
+                                    </li>
+
+                                    <li class="brand__item">
+                                        <p class="brand__name">siemens</p>
+
+                                        <span class="brand__number">99</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <button class="products-filter__button" type="button">more</button>
+                    </div>
+
+                    <!-- Products right -->
+
+                    <div class="products-info">
+                        <!-- Intro -->
+
+                        <div class="produst-top">
+                            <!-- Intro info -->
+
+                            <div class="produst-top__info">
+                                <h2 class="produst-top__heading">
+                                    Adidas Men Running Sneakers
+                                </h2>
+
+                                <p class="produst-top__text">
+                                    Performance and design. Taken right to the edge.
+                                </p>
+
+                                <a class="produst-top__link" href="#">SHOP NOW</a>
+                            </div>
+
+                            <img class="produst-top__img" src="../../img/sneakers_top.png"
+                                alt="Adidas Men Running Sneakers" width="400" height="300" />
+                        </div>
+
+                        <div class="sort">
+                            <h2 class="sort__heading">13 Items</h2>
+
+                            <div class="sort__by-name">
+                                <p class="sort__title">Sort By</p>
+
+                                <p class="sort__text">Name</p>
+                            </div>
+
+                            <div class="sort__by-show">
+                                <p class="sort__title">Show</p>
+
+                                <p class="sort__text">12</p>
+                            </div>
+
+                            <div class="sort__buttons">
+                                <img class="sort__button" src="../../icon/switch.png" width="55" height="60"
+                                    role="button" />
+
+                                <img class="sort__button" src="../../icon/switch-2.png" width="55" height="60"
+                                    role="button" />
+                            </div>
+                        </div>
+
+                        <!-- All products -->
+
+                        <div class="all-products">
+                            <ul class="all-products__list">
+                                <li class="all-products__item">
+                                    <img class="all-products__image" src="../../img/sneakers_black.png"
+                                        alt="Nike Airmax 270 React`s shoes" width="300" height="270" />
+
+                                    <div class="all-products__info">
+                                        <h3 class="all-products__heading">Nike Airmax 270 React</h3>
+
+                                        <div class="all-products__rating">
+                                            <img class="all-products__rating-icon" src="../../icon/rate.png"
+                                                alt="Rate icon" width="72" height="10" />
+
+                                            <p class="all-products__rating-review">0 reviews</p>
+
+                                            <a class="all-products__rating-submit">Submit a review</a>
+                                        </div>
+
+                                        <div class="all-products__price">
+                                            <h3 class="all-products__price-heading">$299,43</h3>
+
+                                            <p class="all-products__price-title">$534,33</p>
+
+                                            <span class="all-products__price-rebate">24% Off</span>
+                                        </div>
+
+                                        <p class="all-products__text">
+                                            Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                            lectus lorem nunc leifend laorevtr istique et congue.
+                                            Vivamus adipiscin vulputate g nisl ut dolor ...
+                                        </p>
+
+                                        <div class="all-products__buttons">
+                                            <button class="all-products__add-button" type="submit">
+                                                <img class="all-products__cart-icon" src="../../icon/cart_blue.png"
+                                                    alt="Like cart icon" width="15" height="15" />
+
+                                                Add To Cart
+                                            </button>
+
+                                            <button class="all-products__like-button" type="submit">
+                                                <img class="all-products__like-icon" src="../../icon/heart_blue.png"
+                                                    alt="Like heart icon" width="15" height="15" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="all-products__item">
+                                    <img class="all-products__image" src="../../img/bag_red.png"
+                                        alt="Nike Airmax 270 React`s shoes" width="300" height="270" />
+
+                                    <div class="all-products__info">
+                                        <h3 class="all-products__heading">Nike Airmax 270 React</h3>
+
+                                        <div class="all-products__rating">
+                                            <img class="all-products__rating-icon" src="../../icon/rate.png"
+                                                alt="Rate icon" width="72" height="10" />
+
+                                            <p class="all-products__rating-review">0 reviews</p>
+
+                                            <a class="all-products__rating-submit">Submit a review</a>
+                                        </div>
+
+                                        <div class="all-products__price">
+                                            <h3 class="all-products__price-heading">$299,43</h3>
+
+                                            <p class="all-products__price-title">$534,33</p>
+
+                                            <span class="all-products__price-rebate">24% Off</span>
+                                        </div>
+
+                                        <p class="all-products__text">
+                                            Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                            lectus lorem nunc leifend laorevtr istique et congue.
+                                            Vivamus adipiscin vulputate g nisl ut dolor ...
+                                        </p>
+
+                                        <div class="all-products__buttons">
+                                            <button class="all-products__add-button" type="submit">
+                                                <img class="all-products__cart-icon" src="../../icon/cart_blue.png"
+                                                    alt="Like cart icon" width="15" height="15" />
+
+                                                Add To Cart
+                                            </button>
+
+                                            <button class="all-products__like-button" type="submit">
+                                                <img class="all-products__like-icon" src="../../icon/heart_blue.png"
+                                                    alt="Like heart icon" width="15" height="15" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="all-products__item">
+                                    <img class="all-products__image" src="../../img/sneakers_2.png"
+                                        alt="Nike Airmax 270 React`s shoes" width="300" height="270" />
+
+                                    <div class="all-products__info">
+                                        <h3 class="all-products__heading">Nike Airmax 270 React</h3>
+
+                                        <div class="all-products__rating">
+                                            <img class="all-products__rating-icon" src="../../icon/rate.png"
+                                                alt="Rate icon" width="72" height="10" />
+
+                                            <p class="all-products__rating-review">0 reviews</p>
+
+                                            <a class="all-products__rating-submit">Submit a review</a>
+                                        </div>
+
+                                        <div class="all-products__price">
+                                            <h3 class="all-products__price-heading">$299,43</h3>
+
+                                            <p class="all-products__price-title">$534,33</p>
+
+                                            <span class="all-products__price-rebate">24% Off</span>
+                                        </div>
+
+                                        <p class="all-products__text">
+                                            Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                            lectus lorem nunc leifend laorevtr istique et congue.
+                                            Vivamus adipiscin vulputate g nisl ut dolor ...
+                                        </p>
+
+                                        <div class="all-products__buttons">
+                                            <button class="all-products__add-button" type="submit">
+                                                <img class="all-products__cart-icon" src="../../icon/cart_blue.png"
+                                                    alt="Like cart icon" width="15" height="15" />
+
+                                                Add To Cart
+                                            </button>
+
+                                            <button class="all-products__like-button" type="submit">
+                                                <img class="all-products__like-icon" src="../../icon/heart_blue.png"
+                                                    alt="Like heart icon" width="15" height="15" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="all-products__item">
+                                    <img class="all-products__image" src="../../img/sneakers_footer.png"
+                                        alt="Nike Airmax 270 React`s shoes" width="300" height="270" />
+
+                                    <div class="all-products__info">
+                                        <h3 class="all-products__heading">Nike Airmax 270 React</h3>
+
+                                        <div class="all-products__rating">
+                                            <img class="all-products__rating-icon" src="../../icon/rate.png"
+                                                alt="Rate icon" width="72" height="10" />
+
+                                            <p class="all-products__rating-review">0 reviews</p>
+
+                                            <a class="all-products__rating-submit">Submit a review</a>
+                                        </div>
+
+                                        <div class="all-products__price">
+                                            <h3 class="all-products__price-heading">$299,43</h3>
+
+                                            <p class="all-products__price-title">$534,33</p>
+
+                                            <span class="all-products__price-rebate">24% Off</span>
+                                        </div>
+
+                                        <p class="all-products__text">
+                                            Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                            gravida et mattis vulputate, tristique ut lectus. Sed et
+                                            lectus lorem nunc leifend laorevtr istique et congue.
+                                            Vivamus adipiscin vulputate g nisl ut dolor ...
+                                        </p>
+
+                                        <div class="all-products__buttons">
+                                            <button class="all-products__add-button" type="submit">
+                                                <img class="all-products__cart-icon" src="../../icon/cart_blue.png"
+                                                    alt="Like cart icon" width="15" height="15" />
+
+                                                Add To Cart
+                                            </button>
+
+                                            <button class="all-products__like-button" type="submit">
+                                                <img class="all-products__like-icon" src="../../icon/heart_blue.png"
+                                                    alt="Like heart icon" width="15" height="15" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Pagination -->
+
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="paginaton__item">1</li>
+                                <li class="paginaton__item">2</li>
+                                <li class="paginaton__item paginaton__item--active">3</li>
+                                <li class="paginaton__item">4</li>
+                                <li class="paginaton__item">5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER start -->
+        <section>
+            <footer>
+                <div class="container">
+                    <div class="main df">
+                        <div class="col-4 col-xs-12">
+                            <div class="col__img">
+                                <img src="../../icon/Icon.png" alt="logo" />
+                                <h4>E-COMM</h4>
+                            </div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever.Since the 1500s, when an unknown printer.
+                            </p>
+                        </div>
+                        <div class="col-4 pt col-xs-12">
+                            <h3>Follow Us</h3>
+                            <p>
+                                Since the 1500s, when an unknown printer took a galley of type and
+                                scrambled.
+                            </p>
+                            <div class="col__icon">
+                                <a href="#"><img src="../../icon/facebook.png" alt="facebook" /></a>
+                                <a href="#"><img src="../../icon/twitter.png" alt="twitter" /></a>
+                            </div>
+                        </div>
+                        <div class="col-4 pt col-xs-12">
+                            <h3>Contact Us</h3>
+                            <p style="font-size: 14px;">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+                        </div>
+                    </div>
+                    <div class="second products df">
+                        <div class="col-3 col-xs-12">
+                            <h3>Infomation</h3>
+                            <ul>
+                                <li>Our Offers</li>
+                                <li>About Us</li>
+                                <li>Infomation</li>
+                                <li>Privacy Policy</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-xs-12">
+                            <h3>Service</h3>
+                            <ul>
+                                <li>Our Offers</li>
+                                <li>About Us</li>
+                                <li>Infomation</li>
+                                <li>Privacy Policy</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-xs-12">
+                            <h3>My Account</h3>
+                            <ul>
+                                <li>Our Offers</li>
+                                <li>About Us</li>
+                                <li>Infomation</li>
+                                <li>Privacy Policy</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-xs-12">
+                            <h3>Our Offers</h3>
+                            <ul>
+                                <li>Our Offers</li>
+                                <li>About Us</li>
+                                <li>Infomation</li>
+                                <li>Privacy Policy</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="end df">
+                        <div class="end__link col-xs-12">
+                            <a href="#">© 2018 Ecommerce theme by www.bisenbaev.com</a>
+                        </div>
+                        <div class="end__img col-xs-12 mt-3">
+                            <img src="../../icon/Western-union.png" alt="" />
+                            <img src="../../icon/footer_icon.png" alt="" />
+                            <img src="../../icon/Paypal.png" alt="" />
+                            <img src="../../icon/vise.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-- FOOTER finish -->
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </main>
 </body>
+
 </html>
