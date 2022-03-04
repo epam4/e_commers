@@ -569,6 +569,7 @@ style */
 .adidas {
   display: flex;
   background: var(--active);
+  margin-top: 100px;
 }
 .adidas .adidas-row {
   display: flex;
@@ -580,6 +581,11 @@ style */
   width: 50%;
   flex-direction: column;
 }
+.adidas .adidas-row .adidas-col img{
+  width: 640px;
+  position: relative;
+  top: -100px;
+}
 
 /* left section styles */
 
@@ -590,6 +596,7 @@ style */
   font-size: 55px;
   line-height: 82px;
   color: var(--white);
+  padding-top: 100px;
 }
 
 .adidas .adidas-col .adidas-col-info {
@@ -2140,6 +2147,9 @@ body {
   }
   .salary{
     width: 80%;
+  }
+  footer{
+    display: none;
   }
 }
 /* Add  */
