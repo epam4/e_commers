@@ -102,22 +102,29 @@ body {
   border-top-color: var(--bordercolor);
   margin: 20px auto;
   font-family: poppins, sans-serif;
+  height: 96px;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  font-family: poppins;
+  font-size: 24px;
 }
 .nav ul {
   display: flex;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 36px;
 }
 .nav .nav-links .list {
   list-style: none;
+  margin-left: 1rem;
+}
+.nav .nav-links .list:nth-child(1){
+  margin-left: 0;
 }
 .nav .nav-links .list a {
   margin: 0 10px;
@@ -128,7 +135,9 @@ body {
   height: 100%;
   text-align: center;
 }
-
+.nav .nav-links .list a span.text{
+  font-family: 'Poppins', sans-serif;
+}
 .nav .nav-links .list a ion-icon {
   height: 100%;
   text-align: center;
