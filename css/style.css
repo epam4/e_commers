@@ -2208,6 +2208,7 @@ body {
   width: 100%;
 }
 footer {
+  margin-top: 100px;
   background-color: var(--whiteblue);
 }
 footer .main {
