@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../Cart/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/container.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header-section" id="header-section">
+    <div class="header-search-section">
+        <input type="search" name="text" id="search" placeholder="search...">
+        <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        <ion-icon class="heart-red" name="heart-outline"></ion-icon>
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+      <section class="header">
+        <div class="top-nav container">
+          <div class="top-nav-left">
+            <div class="language">
+              <select name="language" id="language">
+                <option value="uz">UZ</option>
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
+            <div class="course">
+              <select name="course" id="course">
+                <option value="uzs">UZS</option>
+                <option value="rub">RUB</option>
+                <option value="usd">USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="top-nav-right">
+            <a href="#" class="my-profile">
+              <i class="fa-regular fa-user"></i> My Profile</a>
+            <a href="#" class="my-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Items</a>
+            <a href="#" class="my-cart">$0.00<i class="fas fa-search"></i> </a>
+          </div>
+        </div>
+  
+        <div class="bottom-nav container">
+          <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 97 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="0.778564" width="96.5844" height="96.5844" rx="16" fill="#40BFFF" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M68.1838 45.2765C70.2792 47.372 70.2792 50.7694 68.1838 52.8649L52.0864 68.9623C49.9909 71.0578 46.5935 71.0578 44.498 68.9623L28.4006 52.8649C26.3051 50.7694 26.3051 47.372 28.4006 45.2765L44.498 29.1791C46.5935 27.0837 49.9909 27.0837 52.0864 29.1791L68.1838 45.2765ZM48.2922 40.5617L39.7832 49.0707L48.2922 57.5797L56.8012 49.0707L48.2922 40.5617Z"
+                fill="white" />
+            </svg>
+            E-Comm
+          </div>
+          <nav class="nav">
+            <ul class="nav-links">
+              <li class="list active">
+                <a href="./../../index.html">
+                  <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                  </span>
+                  <span class="home text">home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#bags">
+                  <span class="icon">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </span>
+                  <span class="bags text">bags</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#senakers">
+                  <span class="icon">
+                    <ion-icon name="pricetag-outline"></ion-icon>
+                  </span>
+                  <span class="senakers text">sneakers</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#belt">
+                  <span class="icon">
+                    <!-- <ion-icon name="pricetag-outline"></ion-icon> -->
+                  </span>
+                  <span class="belt text"></span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="./../../pages/Contact/index.html">
+                  <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                  </span>
+                  <span class="portfolio text">contact</span>
+                </a>
+              </li>
+  
+  
+              <div class="indicator"></div>
+            </ul>
+          </nav>
+        </div>
+      </section>
+  
+      <!-- responsive navbar -->
+      <nav class="nav hidden-nav">
+        <ul class="nav-links">
+          <li class="list active">
+            <a href="./../../index.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="home text">home</span>
+            </a>
+          </li>
+          <li class="list ">
+            <a href="#explore">
+              <span class="icon">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+  
+              </span>
+              <span class="home text">explore</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#bags">
+              <span class="icon">
+                <ion-icon name="cart-outline"></ion-icon>
+              </span>
+              <span class="bags text">carts</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#senakers">
+              <span class="icon">
+                <ion-icon name="pricetag-outline"></ion-icon>
+              </span>
+              <span class="senakers text">offer</span>
+            </a>
+          </li>
+  
+          <li class="list">
+            <a href="./../../pages/Contact/index.html">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="portfolio text">accaunt</span>
+            </a>
+          </li>
+  
+  
+          <div class="indicator"></div>
+        </ul>
+      </nav>
+    </header>
+    <!-- /Header section -->
+
+    <!-- Link section -->
+    <div class="container">
+      <section class="link-section">
+        <div class="link-section__content">
+          <a class="link-section__title" href="#">Home</a>
+          <span class="link-section__span"> / </span>
+          <a class="link-section__title" href="#">Hot Deal</a>
+          <span class="link-section__span"> / </span>
+          <p class="link-section__parag">Nike Airmax 270 React</p>
+        </div>
+      </section>
+    </div>
+    <!-- /Link section -->
+
+    <!-- Product section -->
+    <div class="container">
+        <section class="product-section" id="product-section">
+            <div class="product-section__information">
+                <div class="product-section__iformation-left">
+                    PRODUCT
+                </div>
+                <div class="product-section__information-right">
+                    <li class="product-section__title">
+                        Price
+                    </li>
+                    <li class="product-section__title">
+                        Qty
+                    </li>
+                    <li class="product-section__title">
+                        UnitPrice
+                    </li>
+                </div>
+            </div>
+            <div class="product-section__line"></div>
+
+            <div class="product-section__main-one">
+                <div class="product-section__main-one__left">
+                    <img class="image-del" src="../../icon/del_red.png" alt="del image">
+                    <img class="imageone" src="../../img/sneakers_red.png" alt="Sneaker image">
+                    <span class="sneakers__red-title">Nike Airmax 270 react</span>
+                </div>
+                <div class="product-section__main-one__right">
+                    <li>
+                        $998
+                    </li>
+                    <li class="add">
+                        - 2 +
+                    </li>
+                    <li>
+                        $499
+                    </li>
+                </div>
+            </div>
+            <div class="product-section__line add-line"></div>
+
+            <div class="product-section__main-one">
+                <div class="product-section__main-one__left ">
+                    <img class="image-del" src="../../icon/del_red.png" alt="del image">
+                    <img class="imageone" src="../../img/sneakers_black.png" alt="Sneaker image">
+                    <span class="sneakers__black-title">Nike Airmax 270 react</span>
+                </div>
+                <div class="product-section__main-one__right">
+                    <li>
+                        $998
+                    </li>
+                    <li class="add">
+                        - 2 +
+                    </li>
+                    <li>
+                        $499
+                    </li>
+                </div>
+            </div>
+            <div class="product-section__line add-line"></div>
+        </section>
+    </div> 
+    <!-- /Product section -->
+
+    <!-- Purchase section -->
+    <div class="container">
+        <section class="purchase-section">
+            <div class="purchase-section">
+              <div class="purchase-section__left">
+                <div class="purchase-section__left-box">
+                    <div class="purchase-section__left-boxone">
+                        Voucher code
+                    </div>
+                    <div class="purchase-section__left-boxtwo">
+                        <a href="#">Redeem</a>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-section__right">
+                <div class="purchase-section__card">
+                    <div class="purchase-section__card-box ">
+                        <div class="purchase-section__card-title">
+                            <span class="purchase-section__card-title__span">Subtotal</span>
+                            <span class="purchase-section__card-title__span">Shipping fee</span>
+                            <span class="purchase-section__card-title__span">Coupon</span>
+                        </div>
+                        <div class="purchase-section__card-price">
+                            <span class="purchase-section__card-price__span">$998</span>
+                            <span class="purchase-section__card-price__span">$20</span>
+                            <span class="purchase-section__card-price__span">No</span>
+                        </div>
+                    </div>
+                    <div class="purchase-section__line"></div>
+                    <div class="purchase-section__card-total">
+                        <div class="purchase-section__card-total__title">
+                            <span class="total-span">TOTAL</span>
+                        </div>
+                        <div class="purchase-section__card-total__price">
+                            <span class="price-span">$118</span>
+                        </div>
+                    </div>
+                    <button class="check-button" id="check-button">Check out</button>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+    <!-- /Purchase section-->
+
+    <!-- Footer section -->
+    <footer class="footer-section"> 
+      <div class="container">
+        <div class="main df">
+          <div class="col-4 col-xs-12">
+            <div class="col__img">
+              <img src="../../icon/Icon.png" alt="logo">
+              <h4>E-COMM</h4>
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.Since the 1500s, when an unknown printer.
+            </p>
+          </div>
+          <div class="col-4 pt col-xs-12">
+            <h3>Follow Us</h3>
+            <p>
+              Since the 1500s, when an unknown printer took a galley of type and
+              scrambled.
+            </p>
+            <div class="col__icon">
+              <a href="#"><img src="../../icon/facebook.png" alt="facebook" /></a>
+              <a href="#"><img src="../../icon/twitter.png" alt="twitter" /></a>
+            </div>
+          </div>
+          <div class="col-4 pt col-xs-12">
+            <h3>Contact Us</h3>
+            <p>E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+          </div>
+        </div>
+        <div class="second products df">
+          <div class="col-3 col-xs-12">
+            <h3>Infomation</h3>
+           <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-3 col-xs-12">
+            <h3>Service</h3>
+            <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-3 col-xs-12">
+            <h3>My Account</h3>
+            <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-3 col-xs-12">
+            <h3>Our Offers</h3>
+            <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="end df">
+          <div class="end__link col-xs-12">
+            <a href="#">© 2018 Ecommerce theme by www.bisenbaev.com</a>
+          </div>
+          <div class="end__img col-xs-12 mt-3">
+            <img src="../../icon/Western-union.png" alt="Westeren image">
+            <img src="../../icon/footer_icon.png" alt="Master Card image">
+            <img src="../../icon/Paypal.png" alt="Paypal image">
+            <img src="../../icon/vise.svg" alt="Visa image">
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <!-- /Footer section -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
